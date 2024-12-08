@@ -10,8 +10,7 @@ const saveCategoryButton = document.getElementById("saveCategoryButton");
 const renderSelect = () => {
   storeCategoriesContainer.innerHTML = "";
   storeCategories.forEach((category) => {
-    const id = category.value.split("-")[1];
-    console.log(id);
+    const id = category.value?.split("-")[1] || category.categoryid;
     const div = document.createElement("div");
 
     const input = document.createElement("input");

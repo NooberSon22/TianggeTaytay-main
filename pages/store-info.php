@@ -364,11 +364,11 @@ $storeEmail = htmlspecialchars($store['email'] ?? 'N/A');
             <span class="close" id="closeModal">&times;</span>x
             <h2>Edit Product</h2>
             <form id="editProductForm">
+                <img src="../assets/close.png" id="closeEditFormButton" class="close-btn" alt="Close">
                 <input type="text" id="editName" placeholder="Product Name" required />
                 <input type="number" id="editPrice" placeholder="Price" required />
                 <textarea id="editDescription" placeholder="Description"></textarea>
                 <button type="submit">Save Changes</button>
-                <img src="../assets/close.png" id="closeEditFormButton" class="close-btn" alt="Close">
             </form>
         </div>
     </div>

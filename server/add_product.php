@@ -110,7 +110,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (isset($_POST['links']) && is_array($_POST['links'])) {
         $stmt = $conn->prepare("
-            INSERT INTO products_linkstb (link, productid, idstore_linkstb)
+            INSERT INTO products_linkstb (main_link, productid, idstore_linkstb)
             VALUES (:link, :productid, :idstore_linkstb)
         ");
 

@@ -106,11 +106,11 @@ const openEditModal = (id, name, price) => {
   document.querySelector("#editName").value = name;
   document.querySelector("#editPrice").value = price;
 
-  modal.style.display = "block";
+  modal.classList.toggle("form-hidden");
 
   // Close the modal
   closeModal.onclick = () => {
-    modal.style.display = "none";
+    document.querySelector("#editModal").classList.toggle("form-hidden");
   };
 
   // Handle form submission
