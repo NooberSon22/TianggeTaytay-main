@@ -1,0 +1,73 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  font-family: 'Roboto';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Kenzoestic";
+  src: url("./kenzoestic/Kenzoestic\ Black.ttf");
+}
+
+.path {
+    padding: 30px 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.path a {
+    color: #2c2c2c;
+    margin-right: 10px;
+    font-size: 15px !important;
+    font-weight: 400;
+}
+
+.path img {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.path p {
+    color: #0033a0;
+}
+
+.main-container {
+    width: 100%;
+    padding: 20px 300px;
+    margin-bottom: 150px;
+}
+
+.store {
+    padding: 0 200px;
+    display: grid;
+    margin-top: 20px;
+    margin-bottom: 150px;
+    gap: 5rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.seller {  
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 100px;
+    cursor: pointer;
+}
+
+.seller img {
+    border-radius: 100px;
+    width: 170px;
+}
+
+.seller p {
+    font-weight: 600;
+}

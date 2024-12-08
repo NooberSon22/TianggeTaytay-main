@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main {
+  padding-left: 330px;
+  padding-right: 100px;
+  margin-bottom: 200px;
+  height: 750px;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 250px;
+  height: 100% !important;
+  position: absolute;
+  border-right: 1px solid #cdcdcd;
+  left: 0;
+  padding: 20px 0px;
+}
+
+.sidebar a {
+  font-size: 17px !important;
+  display: flex;
+  padding: 10px 15px;
+  height: 50px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar a:hover {
+  background-color: #cdcdcd;
+}
+
+.sidebar a.active {
+background-color: #cdcdcd;
+}
+
+strong {
+  color: #2d2d2d !important ;
+  font-size: 17px;
+  margin-left: 0 !important;
+}
+
+.rounded-box {
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.section {
+  margin-bottom: 24px;
+}
+
+.section button {
+  display: flex;
+  background-color: white;
+  border: 1px #a5a5a5 solid;
+  color: #a5a5a5;
+  padding: 0 12px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.section h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+  color: #0033a0;
+}
+
+.info-group p {
+  margin-top: 20px;
+  font-size: 17px;
+  color: #575757;
+  font-weight: 600;
+}
+
+.info-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.info-group div:first-child {
+  width: 150px;
+  font-weight: bold;
+  margin-right: 300px;
+}
+
+.info-group div:last-child {
+  flex-grow: 1; 
+}
+
+.edit-btn {
+  display: flex;
+  background-color: white;
+  border: 1px #a5a5a5 solid;
+  color: #a5a5a5;
+  padding: 0 12px;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+

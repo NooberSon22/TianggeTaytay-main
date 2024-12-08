@@ -1,0 +1,27 @@
+files with changes:
+
+store-info.php
+updateStore.php
+fetch_product.php
+products.php
+view-product.php
+view-store.php
+store.php
+add-product.php
+
+store-categories-management.js
+adding-form.js
+store-info.js
+products-fetch-ui.js
+products.js
+view-product.js
+view-product-ui.js
+view-store.js
+view-store-ui.js
+platform-management.js
+addding-product.js
+
+store-info.css
+view-product.css
+view-store.css
+store-view.css

@@ -1,0 +1,314 @@
+/* General Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto' !important;
+    background-color: #ffffff;
+}
+
+input,
+button,
+select {
+    outline: none;
+    
+}
+
+input {
+    border: 1px solid #cccccc;
+}
+
+/* Sidebar */
+
+.top-bar
+/* Main Content */
+.main-container {
+    margin: 180px 0px 0px 300px;
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.main-content {
+    display: flex;
+    flex: 1;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.left-container {
+    width: 280px;
+    margin-right: 40px;
+    border-right: 1px solid #f3f3f3;
+}
+
+.left-container p {
+    font-weight: 600;
+    font-size: 17px;
+    padding: 10px 20px;
+    color: #202020;
+    text-align: center;
+    padding: 15px;
+}
+
+.sidebar-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sidebar-item.active {
+    background-color: #e4e9f4;
+    color: #0033A0;
+}
+
+.right-container {
+    flex: 1;
+    padding: 60px 20px 20px 20px;
+}
+
+.section-container {
+    display: none;
+    /* Initially hidden */
+}
+
+h2 {
+    color: #0033A0;
+}
+
+.section-container.active {
+    display: block;
+    /* Visible when active */
+}
+
+/* Hidden class to hide sections */
+.hidden {
+    display: none;
+}
+
+.section-header {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+.form-container {
+    display: flex
+;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 17px;
+    font-weight: 600;
+    width: 30%;
+}
+
+.form-group input {
+    font-size: 17px;
+    font-weight: 600;
+    height: 40px;
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 10px; 
+}
+
+table{
+    cursor: default;
+    width: 100%;
+    border-collapse: separate;  /* Change to 'separate' for border-radius to work */
+    border-spacing: 0;           /* Removes space between cells */
+    margin-bottom: 20px;
+    border-radius: 20px;      /* Rounded corners */
+    margin-top: 100px;
+    overflow: hidden;           /* Ensure overflow is hidden to show rounded corners */
+}
+
+.search {
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 5px;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    color:  black;
+    border: none;
+    cursor: default;
+}
+
+
+th {
+    color:  black;
+    font-weight: bold;
+    padding: 10px;
+}
+
+tr:hover {
+    background-color: #e0e0e0;
+}
+
+/* Optional: Apply a border to table and cells */
+table, th{
+    border: 1px solid #ccc; /* Light border color for visibility */
+}
+
+.delete-btn {
+    color: white;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.btn {
+    padding: 13px 20px;
+    font-weight: 600;
+    font-size: 15px;
+    width: 140px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-submit {
+    background-color: #0033A0;
+    color: white;
+    border: none;
+    margin-left: 20px;
+}
+
+.btn-cancel {
+    background-color: white;
+    color: #0033A0;
+    border: 1px solid #0033A0;
+}
+
+.error-message-container {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    text-align: left;
+    width: 278px;
+    margin-right: 20px;
+}
+
+.success-message-container {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border: 1px solid green;
+    border-radius: 5px;
+    text-align: left;
+    width: 278px;
+    margin-right: 20px
+}
+
+.category-table-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+#category-message-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.success-message {
+    color: green;
+}
+
+.error-message {
+    color: red;
+}
+
+.category-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.category-table th,
+.category-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.category-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.category-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.category-table td button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.category-table .btn-edit {
+    background-color: #ffa500;
+    color: white;
+}
+
+.category-table .btn-delete {
+    background-color: #f44336;
+    color: white;
+}
+
+.category-table .btn-edit:hover {
+    background-color: #e59400;
+}
+
+.category-table .btn-delete:hover {
+    background-color: #d32f2f;
+}
+

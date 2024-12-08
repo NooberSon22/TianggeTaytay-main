@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.container-center{
+    display: flex;
+    position: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70vh;
+    margin-bottom: 20vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 20%;
+}
+
+.return-home {
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.return-home a {
+    color: black;
+    text-decoration: none;
+    font-weight: 450;
+}
+
+.back-button {
+    position: relative;
+    font-size: 16px;
+    text-decoration: none;
+    color: #007BFF;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.back-button img {
+    width: 20px;
+    height: auto;
+}
+
+/* login wrapeer */
+
+.login-wrapper {
+    justify-content: space-between;
+    width: 500px;
+    height: auto;
+    background-color: white;
+    box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    border-radius: 8px;
+}
+
+.login-image img {
+    width: 502px;
+    height: 210px;
+}
+
+.login-wrapper p1 {
+    text-align: center;
+    display: block;
+}
+
+.login-wrapper p2 {
+    text-align: left;
+    display: block;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+
+.login-wrapper button {
+    margin-top: 10px;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: rgba(0, 51, 160, 1);
+    font-weight: 500;
+    border-radius: 10px;
+    border: 0px;
+    font-size: 18px;
+    letter-spacing: 1px;;
+}
+
+.login-wrapper h3 {
+    color: rgba(0, 51, 160, 1);
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 35px;
+}
+
+.subheading {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;;
+    font-size: 17px;
+}
+
+/* error message */
+
+.error-message-container {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+/* sa register  */
+
+
+.register-now {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.register-now a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+
+/* show pass */
+
+.show-password {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.show-password input {
+    margin: 0;
+}
+
+
+/* input textbozx */
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 10px 0px;
+}

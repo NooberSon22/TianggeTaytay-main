@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+@font-face {
+  font-family: "Kenzoestic";
+  src: url("./kenzoestic/Kenzoestic\ Black.ttf");
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact-us {
+  display: flex;
+  margin: 100px 0px 200px 0px;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading */
+.contact-us h2 {
+  font-size: 2.5rem;
+  color: #0033A0;
+  margin-bottom: 50px;
+  font-family: 'kenzoestic'
+}
+
+/* Description text */
+.contact-us p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Contact Info */
+.contact-container {
+  width: 40%;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 60px 80px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.contact-container h3 {
+  font-size: 1.5rem;
+  color: #0033A0;
+  margin-bottom: 10px;
+  font-family: 'kenzoestic';
+  src: url("./kenzoestic/Kenzoestic\ Black.ttf");
+}
+
+.contact-container p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.contact-container a {
+  color: #0033A0;
+  text-decoration: none;
+  font-weight: 450;
+  font-size: 1.2rem;
+}
+
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-item {
+    width: 80%;
+    /* Full width on smaller screens */
+    margin-bottom: 20px;
+  }
+
+  .contact-us h2 {
+    font-size: 2rem;
+    color: #0033A0;
+  }
+
+  .contact-us p {
+    font-size: 1rem;
+  }
+
+  .info-item h3 {
+    font-size: 1.3rem;
+  }
+
+  .info-item p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-us h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact-us p {
+    font-size: 0.9rem;
+  }
+
+  .info-item h3 {
+    font-size: 1.2rem;
+  }
+
+  .info-item p {
+    font-size: 0.9rem;
+  }
+}

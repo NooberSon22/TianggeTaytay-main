@@ -1,0 +1,217 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  font-family: 'Roboto';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Kenzoestic";
+  src: url("./kenzoestic/Kenzoestic\ Black.ttf");
+}
+
+main {
+    display: flex;
+    width: 100%;
+    height: 86vh;
+    padding: 60px 120px;
+}
+
+.main-left-side {
+    width: 60%;
+    height: 558px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main-left-side img {
+    width: 300px;
+    height: 126px
+}
+
+.main-left-side h1 {
+    color: #0033a0;
+    font-size: 95px;
+    font-weight: 800;
+    line-height: 100px;
+    letter-spacing: 1px;
+    font-family: 'kenzoestic';
+}
+
+.main-left-side p {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 0px;
+    color: #2c2c2c;
+}
+
+.main-right-side {
+    width: 40%;
+    height: 558px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.products-shortcut {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: flex-end;
+    padding: 10px 25px;
+    align-items: center;
+}
+
+.main-right-side a {
+    color: #204cac;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.products-shortcut img{
+    width: 25px;
+    height: 25px;  
+}
+
+
+.blue-container {
+    width: 100%;
+    height: 150px;
+    background-color: #0033a0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 120px;
+    margin-bottom: 40px;
+}
+
+.sub-content {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    width: 320px;
+    color: white;
+}
+
+
+.content img {
+    width: 70px;
+    height: 70px;
+}
+
+.content h3 {
+    font-size: 16px; 
+    margin-bottom: 5px;
+}
+
+.content p {
+    font-size: 14px;
+}
+
+.category-container, .product-container {
+    padding: 0px 120px;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(255 255 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-container {
+    height: 688px !important;
+}
+
+.category {    
+    display: flex;
+    height: 180px;
+    width: 180px;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(253 253 253);
+    border-radius: 100px;
+    justify-content: center;
+    box-shadow: 0px 0px 22px -6px rgba(0,0,0,0.31);
+    cursor: pointer;
+}
+
+.category-item, .product-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.category-container img {
+    margin-bottom: 10px;
+    width: 72px;
+    height: 72px;
+}
+
+.product-container img {
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.category-container p {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.new-arrival-item  img{
+
+    cursor: pointer;
+}
+
+.product-container p {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.product-container .product-price {
+    font-size: 18px !important;
+    font-weight: 600;
+}
+
+.category-container h1, .product-container h1 {
+    font-size: 2.5rem;
+    color: #0033a0;
+    font-family: 'kenzoestic';
+}
+
+.category-container button, .product-container button{
+    background-color: #ffffff;
+    border: 1px solid blue;
+    width: 170px;
+    height: 50px;
+    border-radius: 40px;
+    color: blue;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.view {
+    width: 120px !important;
+}
+
+.last-product-container {
+    margin-bottom: 60px;
+}
+
+  
+
+

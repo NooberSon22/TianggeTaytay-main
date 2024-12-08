@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.content {
+  margin-top: 130px;
+  margin-left: 300px;
+  /* Increased margin-left to match the new sidebar width */
+  padding: 20px;
+  width: calc(100% - 300px);
+  /* Adjusted content width */
+}
