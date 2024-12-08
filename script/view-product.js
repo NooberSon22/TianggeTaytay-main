@@ -14,38 +14,31 @@ let storeid = "";
 const defaultImage = "https://via.placeholder.com/150?text=No+Image";
 const API_URL = "http://localhost:3000/server";
 
-const displayLinks = (shopee_link, lazada_link) => {
+const displayLinks = (productlinks) => {
   links.innerHTML = "";
 
-  if (shopee_link) {
-    const shopeeIcon = document.createElement("img");
-    shopeeIcon.src = "../assets/shopee.png";
-    shopeeIcon.alt = "Shopee Link";
-    shopeeIcon.classList.add("link-icon");
-    links.appendChild(shopeeIcon);
-
-    shopeeIcon.addEventListener("click", () => {
-      window.open(shopee_link, "_blank");
-    });
-  }
-
-  if (lazada_link) {
-    const lazadaIcon = document.createElement("img");
-    lazadaIcon.src = "../assets/lazada.png";
-    lazadaIcon.alt = "Lazada Link";
-    lazadaIcon.classList.add("link-icon");
-    links.appendChild(lazadaIcon);
-
-    lazadaIcon.addEventListener("click", () => {
-      window.open(lazada_link, "_blank");
-    });
-  }
-
-  if (!shopee_link && !lazada_link) {
+  if (!productlinks || productlinks.length === 0) {
     const noLinksMessage = document.createElement("p");
     noLinksMessage.textContent = "No external links available.";
     links.appendChild(noLinksMessage);
   }
+
+  productlinks.forEach((link) => {
+    const div = document.createElement("div");
+    const img = document.createElement("img");
+    img.src = `data:image/png;base64,${link.linkimg}`;
+    img.loading = "lazy";
+
+    div.appendChild(img);
+
+    div.className = "link";
+
+    div.addEventListener("click", () => {
+      window.open(link.link, "_blank");
+    });
+
+    links.appendChild(div);
+  });
 };
 
 const displayImages = (images) => {
@@ -134,7 +127,14 @@ const renderPage = async () => {
       throw new Error("Product data is missing or invalid.");
     }
 
-    const { product, images, categories, types, storeid: store_id } = data;
+    const {
+      product,
+      images,
+      categories,
+      types,
+      storeid: store_id,
+      links,
+    } = data;
 
     storeid = store_id;
 
@@ -147,7 +147,7 @@ const renderPage = async () => {
     displayImages(images || []);
     displayCategories(categories || []);
     displayTypes(types || []);
-    displayLinks(product.shopee_link, product.lazada_link);
+    displayLinks(links || []);
     renderUI(product.storename);
 
     storename.textContent = product.storename;

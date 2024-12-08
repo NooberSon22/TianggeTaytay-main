@@ -48,6 +48,38 @@ foreach ($imagesData['data'] as $image) {
     $images[] = base64_encode($image['img']);
 }
 
+$linksData = readDataWithJoins(
+    $conn,
+    "products_linkstb",
+    [
+        [
+            "table" => "store_linkstb",
+            "leftTable" => "products_linkstb",
+            "leftColumn" => "idstore_linkstb",
+            "rightColumn" => "idstore_linkstb"
+        ],
+        [
+            "table" => "platformtb",
+            "leftTable" => "store_linkstb",
+            "leftColumn" => "platformid",
+            "rightColumn" => "platformid"
+        ]
+    ],
+    [
+        "productid" => $id
+    ]
+);
+
+$links = [];
+
+foreach ($linksData["data"] as $link) {
+    $links[] = [
+        "link" => $link["main_link"],
+        "linkimg" => base64_encode($link["img"]),
+    ];
+}
+
+
 $response = [
     'success' => true,
     'message' => "Data fetched successfully",
@@ -55,7 +87,8 @@ $response = [
     'images' => $images,
     'categories' => $categories,
     'types' => $types,
-    'storeid' => $storeid
+    'storeid' => $storeid,
+    'links' => $links
 ];
 
-echo json_encode($response);
+echo json_encode($response, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);

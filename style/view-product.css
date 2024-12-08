@@ -140,6 +140,18 @@
     margin-left: 15px;
 }
 
+.product-details .availability > div .link {
+    min-width: 120px;
+    height: 50px;
+}
+
+.product-details .availability > div img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
 .store {
     display: flex;
     justify-content: space-between;
